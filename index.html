@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <title>YourPDF</title>
+    </head>
+    <body>
+        <script>
+            if(localStorage.getItem('session')) window.location.href = "view/home.html";
+        </script>
+        <header>
+            <nav class="nav">
+                <div class="icon-container">
+                    <a class="icono" href="./index.html">
+                        <span class="your">your</span><span class="pdf">pdf</span>
+                    </a>
+                </div>
+                <ul>
+                    <div class="buttons">
+                        <li>
+                            <a href="./index.html" class="first">ingresar</a>
+                        </li>
+                        <li>
+                            <a href="view/registro.html" class="second">registrarse</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form method="POST" class="form">
+                <h2>inicio de sesión</h2>
+                <div class="field">
+                    <label for="usuario">usuario</label>
+                    <input type="email" name="usuario" id="usuario" placeholder="Ingrese su usuario" required>
+                </div>
+                <div class="field">
+                    <label for="clave">contraseña</label>
+                    <input type="password" name="clave" id="clave" placeholder="Ingrese su contraseña" required>
+                </div>
+                <input type="submit" value="ingresar">
+            </form>
+        </main>
+        <footer class="footer">create by: daniel caicedo murillo</footer>
+        <script src="js/login.js" type="module"></script>
+    </body>
+</html>

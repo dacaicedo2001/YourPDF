@@ -1,0 +1,106 @@
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    color: var(--blanco);
+    background-color: var(--dark);
+}
+
+.card hr {
+    background-color: var(--blanco);
+    height: 1.5px;
+    outline: none;
+    border: none;
+}
+
+.card .icon {
+    display: block;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.card-icon {
+    position: relative;
+}
+
+.icon-options {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 15px;
+    font-size: 1.5rem;
+}
+
+.visible {
+    display: block;
+}
+
+.card-options {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: #CCC;
+}
+
+.card-options a {
+    display: block;
+    color: var(--negro);
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.botones a, .botones button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: var(--blanco);
+}
+
+.botones a {
+    background-color: var(--azul-claro);
+}
+
+.botones button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--rosa);
+}
+
+.botones a:hover {
+    background-color: var(--azul-hover);
+}
+
+.botones button:hover {
+    background-color: var(--rosa-hover);
+}
+
+.card-options a:hover {
+    background-color: #FFF;
+    border-radius: 5px;
+    color: var(--rosa);
+}
+
+.link {
+    text-align: center;
+    width: 100%;
+    padding: 0px 20px;
+    color: var(--azul-claro);
+    overflow-x: hidden;
+}

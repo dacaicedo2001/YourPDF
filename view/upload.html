@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="e">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/aside.css">
+        <link rel="stylesheet" href="../css/upload.css">
+        <script src="https://kit.fontawesome.com/22cdbfb1be.js" crossorigin="anonymous"></script>
+        <title>YourPDF</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <div class="icon-container">
+                    <a class="icono" href="#">
+                        <span class="your">your</span><span class="pdf">pdf</span>
+                    </a>
+                </div>
+                <div class="opcions-container">
+                    <div>
+                        <img class="user-image" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="user">
+                    </div>
+                    <div id="user"></div>
+                    <div class="options-relative">
+                        <i class="fa-solid fa-caret-down arrow"></i>
+                        <div class="options" id="menu">
+                            <form method="post" class="logout">
+                                <input type="submit" value="salir">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <script src="../js/user.js"></script>
+        <main>
+            <aside class="aside">
+                <hr>
+                <ul class="items-content">
+                    <li class="item">
+                        <a href="./home.html" class="home">
+                            <i class="fa-solid fa-house"></i>
+                            principal
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./upload.html" class="upload">
+                            <i class="fa-solid fa-file-arrow-up"></i>
+                            cargar archivo
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./update.html" class="update">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            actualizar archivo
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="./files.html" class="files">
+                            <i class="fa-solid fa-trash"></i>
+                            mis archivos
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content">
+                <div class="title-content">
+                    <h1>Subir archivo</h1>
+                </div>
+                <div class="file-content">
+                    <form enctype="multipart/form-data" method="post" class="form">
+                        <label for="file">Seleccione su archivo: (.pdf)</label>
+                        <input type="file" name="archivo" id="archivo">
+                        <div class="button">
+                            <input type="submit" value="Subir">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">create by: daniel caicedo murillo</footer>
+        <script src="../js/upload.js" type="module"></script>
+        <script src="../js/menu.js"></script>
+    </body>
+</html>

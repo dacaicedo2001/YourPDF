@@ -1,0 +1,70 @@
+
+main {
+    display: flex;
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+}
+
+body {
+    overflow: hidden;
+}
+
+.aside hr {
+    background-color: var(--blanco);
+    height: 1.5px;
+    margin: 0px 20px;
+    outline: none;
+    border: none;
+}
+
+.aside {
+    background-color: var(--dark);
+    width: 20%;
+    height: 100%;
+}
+
+.icon-container {
+    background-color: var(--dark);
+    width: 20%;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.nav {
+    padding: 0;
+    background-color: var(--blanco);
+}
+
+.opcions-container {
+    padding-right: 20px;
+    color: var(--negro);
+}
+
+.footer {
+    right: 0;
+    width: 80%;
+    background-color: var(--blanco);
+    color: rgb(160, 160, 160);
+}
+
+.items-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+}
+
+.item a {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: var(--blanco);
+}
+
+.item a:hover {
+    background-color: var(--dark);
+    filter: brightness(.8);
+}

@@ -1,0 +1,110 @@
+
+.content {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+}
+
+.title-content {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #90EE90;
+}
+
+.item .files {
+    background-color: var(--rosa);
+}
+
+.files-content {
+    position: relative;
+    height: 70%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--blanco);
+}
+
+
+.files-content p {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.files-content table {
+    display: block;
+    width: 80%;
+    height: 90%;
+    padding: 10px;
+    margin: auto;    
+}
+
+.thead, .tbody {
+    display: block;
+    width: 100%;
+}
+
+.thead tr, .tbody tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.tbody {
+    position: relative;
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.tbody h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.tbody tr {
+    padding: 5px 1px;
+}
+
+.tbody input[type=submit] {
+    background-color: var(--rosa);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: var(--blanco);
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.thead {
+    padding-bottom: 5px;
+    padding-right: 35px;
+}
+
+.tbody tr:nth-child(odd) {
+    background-color: rgb(235, 235, 235);
+}
+
+.tbody input[type=submit]:hover {
+    background-color: var(--rosa-hover);
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.acciones a {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: var(--blanco);
+    background-color: var(--azul-claro);
+}

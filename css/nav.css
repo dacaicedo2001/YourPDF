@@ -1,0 +1,124 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--dark);
+}
+
+.buttons {
+    display: flex;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.buttons li a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: var(--blanco);
+}
+
+.first {
+    background-color: var(--azul-claro);
+}
+
+.second {
+    background-color: var(--rosa);
+}
+
+.first:hover {
+    background-color: var(--azul-hover);
+}
+
+.second:hover {
+    background-color: var(--rosa-hover);
+}
+
+.icono, .your, .pdf {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.your {
+    color: var(--azul-claro);
+    text-transform: capitalize;
+}
+
+.pdf {
+    color: var(--rosa);
+    text-transform: uppercase;
+}
+
+.icono:hover > .your {
+    color: var(--azul-hover);
+}
+
+.icono:hover > .pdf {
+    color: var(--rosa-hover);
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+}
+
+.opcions-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.opcions-container a {
+    font-weight: normal;
+}
+
+.opcions-container i {
+    cursor: pointer;
+}
+
+.options-relative {
+    position: relative;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 25px;
+    border-radius: 5px;
+    background-color: #CCC;
+}
+
+.visible {
+    display: block;
+}
+
+.options a, .options input {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: var(--negro);
+}
+
+.options a {
+    display: block;
+}
+
+.options input {
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.options a:hover, .options input:hover {
+    color: var(--rosa);
+    background-color: var(--blanco);
+    border-radius: 5px;
+}

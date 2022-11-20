@@ -1,0 +1,33 @@
+
+:root {
+    --blanco: #FFF;
+    --negro: #000;
+    --dark: #1B2431;
+    --azul-claro: #00AAE4;
+    --azul-hover: #00BFFF;
+    --azul-enlaces: #2271B3;
+    --gris: #DDD;
+    --rosa: #E30052;
+    --rosa-hover: #FF0080;
+    --verde: #28A745;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

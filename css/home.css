@@ -1,0 +1,60 @@
+
+.content {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+}
+
+.item .home {
+    background-color: var(--rosa);
+}
+
+.title-content {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #90EE90;
+}
+
+.card-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    height: 70%;
+    margin-top: 20px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    background-color: var(--blanco);
+}
+
+.form {
+    height: 100%;
+}
+
+.form input[type=submit] {
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--blanco);
+    text-transform: capitalize;
+    background-color: var(--rosa);
+}
+
+.form input[type=submit]:hover {
+    background-color: var(--rosa-hover);
+}
+
+.card-content h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

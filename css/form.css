@@ -1,0 +1,64 @@
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--gris);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.field label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.field input {
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 400px;
+    outline-color: var(--azul-claro);
+}
+
+.form h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.form a {
+    text-align: center;
+    color: var(--azul-enlaces);
+    font-size: 1.2rem;
+}
+
+.form [type=submit] {
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    width: 50%;
+    color: var(--blanco);
+    background-color: var(--azul-claro);
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form [type=submit]:hover {
+    background-color: var(--azul-hover);
+}
